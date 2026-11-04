@@ -7,6 +7,9 @@
    - Remove an item: delete its whole { ... }, line (keep the commas!).
    - Keep every quote " " and comma , in place.
    - Titles accept an "accent" word which gets the animated gradient.
+   - Every section is its own page (see "pages" below). To add a page, create
+     the .html file, then add one { ... } line to "pages": it shows up in the
+     menu, the home page list, the Previous/Next buttons and the footer.
    - Colors and spacing live in style.css (the :root colors at the top).
    ===================================================================== */
 
@@ -19,11 +22,18 @@ const SITE = {
 
   pageTitle: "Crave Destination: Satisfy Your Cravings",
 
-  /* ---------- NAV BAR ---------- */
-  nav: [
-    { label: "Home", href: "#top" },
-    { label: "Product", href: "#product-details" },
-    { label: "About Us", href: "#about-us" }
+  /* ---------- PAGES (menu, home list, Previous/Next buttons, footer) ----------
+     Order here = order of the menu and of the Previous/Next buttons.
+     key   = must match data-page in that page's .html file
+     label = short name in the menu      title = full page name
+     blurb = one line shown in the home page list */
+  pages: [
+    { key: "home",      file: "index.html",     label: "Home",      title: "Home",                  emoji: "🏠", blurb: "Meet Crave Destination." },
+    { key: "special",   file: "special.html",   label: "Special",   title: "What Makes It Special", emoji: "🥗", blurb: "Why our chicken veggie balls are worth the craving." },
+    { key: "customers", file: "customers.html", label: "Customers", title: "Our Customers",         emoji: "📸", blurb: "Photos from the people who already ordered." },
+    { key: "product",   file: "product.html",   label: "Product",   title: "Product",               emoji: "🍗", blurb: "See every ingredient that goes in." },
+    { key: "about",     file: "about.html",     label: "About Us",  title: "About Us",              emoji: "👥", blurb: "Our mission, vision, objectives and team." },
+    { key: "permits",   file: "permits.html",   label: "Permits",   title: "Business Permits",      emoji: "📄", blurb: "Our official business permits and registrations." }
   ],
 
   /* ---------- HOME / HERO ---------- */
@@ -37,9 +47,12 @@ const SITE = {
     tagline: "— Destination will satisfy your cravings —",
     buttons: [
       { label: "Buy now", href: "https://www.facebook.com/profile.php?id=61594625332333", style: "solid" },
-      { label: "See More", href: "#product-details", style: "ghost" }
+      { label: "See More", href: "product.html", style: "ghost" }
     ]
   },
+
+  /* ---------- HOME: LIST OF PAGES ---------- */
+  explore: { title: "Explore the", accent: "Site" },
 
   /* ---------- WHAT MAKES IT SPECIAL ---------- */
   special: {
@@ -81,9 +94,9 @@ const SITE = {
     title: "Thank You for Those Who Already Ordered Our Chicken Viggies!",
     note: "(Asked Permissions before Taking Photos)",
     photos: [
-      { img: "src/customer/1.jpg", alt: "Customer enjoying Golden Crust Pizza Roll 1" },
-      { img: "src/customer/2.jpg", alt: "Customer enjoying Golden Crust Pizza Roll 2" },
-      { img: "src/customer/3.jpg", alt: "Customer enjoying Golden Crust Pizza Roll 3" }
+      { img: "src/customer/1.jpg", alt: "Customer enjoying Crave Destination Chicken Veggie Balls 1" },
+      { img: "src/customer/2.jpg", alt: "Customer enjoying Crave Destination Chicken Veggie Balls 2" },
+      { img: "src/customer/3.jpg", alt: "Customer enjoying Crave Destination Chicken Veggie Balls 3" }
     ]
   },
 
@@ -130,7 +143,7 @@ const SITE = {
       }
     ],
 
-    orgChart: { img: "src/about/chart.jpg", alt: "Organizational Chart of Golden Crust Team" },
+    orgChart: { title: "Organizational Chart", note: "Select the chart to open it full size.", img: "src/about/chart.jpg", alt: "Organizational chart of the Crave Destination team" },
 
     facebook: {
       heading: "Facebook Page:",
@@ -141,7 +154,7 @@ const SITE = {
 
   /* ---------- BUSINESS PERMITS ---------- */
   permits: {
-    title: "Business", accent: "Permit",
+    title: "Business", accent: "Permits", note: "Select a document to open it full size.",
     photos: [
       { img: "src/permit/essupermit.jpg", alt: "LGU Permit" },
       { img: "src/permit/permit.jpg", alt: "BIR Permit" },

@@ -3,37 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Golden Crust: The Pizza You Can Hold!</title>
+<title>Crave Destination</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="home">
+
+<a class="skip" href="#main">Skip to content</a>
 
 <!-- Animated background -->
 <div class="bg"><div class="dots"></div><div class="blob b1"></div><div class="blob b2"></div><div id="crumbs"></div></div>
 
-<!-- Page skeleton. The content of each block is filled from content.js -->
-<nav id="nav"></nav>
+<!-- Header + navigation: built from the "pages" list in content.js -->
+<header class="site-head" id="site-head"></header>
 
-<header id="top" class="hero"><div class="wrap g2" id="hero"></div></header>
+<noscript><p class="center" style="padding:8rem 1rem">Please turn on JavaScript to view this site.</p></noscript>
 
-<main>
-  <section id="about"><div class="wrap" id="special"></div></section>
+<main id="main">
+  <section class="hero"><div class="wrap g2" id="hero"></div></section>
 
-  <div class="marquee"><div id="marq"></div></div>
+  <div class="marquee" aria-hidden="true"><div id="marq"></div></div>
 
-  <section class="s-choc center" style="padding:5rem 0"><div class="wrap" id="banner"></div></section>
+  <section class="s-choc center banner"><div class="wrap" id="banner"></div></section>
 
-  <section id="customer-love"><div class="wrap" id="customers"></div></section>
-
-  <section id="product-details" class="s-choc center"><div class="wrap" id="product"></div></section>
-
-  <section id="about-us" class="s-brown center"><div class="wrap" id="aboutus"></div></section>
-
-  <section id="business-permit"><div class="wrap center" id="permits"></div></section>
+  <section id="explore"><div class="wrap" id="explore-list"></div></section>
 </main>
 
-<footer id="footer"></footer>
+<footer class="site-foot" id="footer"></footer>
 
 <script src="content.js"></script>
 <script src="script.js"></script>
