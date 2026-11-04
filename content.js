@@ -150,5 +150,5 @@ const SITE = {
   },
 
   /* ---------- FOOTER ---------- */
-  footer: "2025 Crave Destination Project. Made with love for Ma'am's class."
+  footer: "© 2026 Crave: Destination Project - All Rights Reserved."
 };
