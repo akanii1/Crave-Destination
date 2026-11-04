@@ -28,12 +28,12 @@ const SITE = {
      label = short name in the menu      title = full page name
      blurb = one line shown in the home page list */
   pages: [
-    { key: "home",      file: "index.html",     label: "Home",      title: "Home",                  emoji: "🏠", blurb: "Meet Crave Destination." },
-    { key: "special",   file: "special.html",   label: "Special",   title: "What Makes It Special", emoji: "🥗", blurb: "Why our chicken veggie balls are worth the craving." },
-    { key: "customers", file: "customers.html", label: "Customers", title: "Our Customers",         emoji: "📸", blurb: "Photos from the people who already ordered." },
-    { key: "product",   file: "product.html",   label: "Product",   title: "Product",               emoji: "🍗", blurb: "See every ingredient that goes in." },
-    { key: "about",     file: "about.html",     label: "About Us",  title: "About Us",              emoji: "👥", blurb: "Our mission, vision, objectives and team." },
-    { key: "permits",   file: "permits.html",   label: "Permits",   title: "Business Permits",      emoji: "📄", blurb: "Our official business permits and registrations." }
+    { key: "home", file: "index.html", label: "Home", title: "Home", emoji: "🏠", blurb: "Meet Crave Destination." },
+    { key: "special", file: "special.html", label: "Special", title: "What Makes It Special", emoji: "🥗", blurb: "Why our chicken veggie balls are worth the craving." },
+    { key: "customers", file: "customers.html", label: "Customers", title: "Our Customers", emoji: "📸", blurb: "Photos from the people who already ordered." },
+    { key: "product", file: "product.html", label: "Product", title: "Product", emoji: "🍗", blurb: "See every ingredient that goes in." },
+    { key: "about", file: "about.html", label: "About Us", title: "About Us", emoji: "👥", blurb: "Our mission, vision, objectives and team." },
+    { key: "permits", file: "permits.html", label: "Permits", title: "Business Permits", emoji: "📄", blurb: "Our official business permits and registrations." }
   ],
 
   /* ---------- HOME / HERO ---------- */
@@ -96,7 +96,10 @@ const SITE = {
     photos: [
       { img: "src/customer/1.jpg", alt: "Customer enjoying Crave Destination Chicken Veggie Balls 1" },
       { img: "src/customer/2.jpg", alt: "Customer enjoying Crave Destination Chicken Veggie Balls 2" },
-      { img: "src/customer/3.jpg", alt: "Customer enjoying Crave Destination Chicken Veggie Balls 3" }
+      { img: "src/customer/3.jpg", alt: "Customer enjoying Crave Destination Chicken Veggie Balls 3" },
+      { img: "src/customer/4.jpg", alt: "Customer enjoying Crave Destination Chicken Veggie Balls 4" },
+      { img: "src/customer/5.jpg", alt: "Customer enjoying Crave Destination Chicken Veggie Balls 5" },
+      { img: "src/customer/6.jpg", alt: "Customer enjoying Crave Destination Chicken Veggie Balls 6" }
     ]
   },
 
