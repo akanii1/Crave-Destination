@@ -150,5 +150,5 @@ const SITE = {
   },
 
   /* ---------- FOOTER ---------- */
-  footer: "© 2026 Crave: Destination Project - All Rights Reserved."
+  footer: "© 2026: Crave Destination Project - All Rights Reserved."
 };
